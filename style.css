@@ -145,9 +145,10 @@ header {
 .services {
   margin: 16rem 0 10rem 0;
   text-align: center;
-  font-size: 5rem;
+  font-size: 2rem;
   color: #696969;
 }
+
 
 .services-img {
   display: flex;
