@@ -21,6 +21,11 @@ dd {
 
 a {
   text-decoration: none;
+  color: #696969;
+}
+
+a:hover {
+  color: #c16e70;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
@@ -79,6 +84,7 @@ select {
 
 * {
   font-family: 'Fira Sans', sans-serif;
+  
 }
 
 .top-nav {
@@ -93,6 +99,8 @@ select {
   
 }
 
+
+
 .top-nav a {
   color: #d1d1d1;
 }
@@ -102,10 +110,6 @@ select {
   font-size: 1.13rem;
 }
 
-.services {
-  text-align: center;
-  font-size: 3rem;
-}
 
 header {
   background-image: url(hero_bg.png);
@@ -123,19 +127,26 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: #cfcfcf;
   
 }
 
 .hero h1 {
   font-size: 5rem;
-  color: white;
   font-weight: 300;
 }
 
 .special {
   font-size: 1.75rem;
-  color: white;
+  
   text-align: center;
+}
+
+.services {
+  margin: 16rem 0 10rem 0;
+  text-align: center;
+  font-size: 5rem;
+  color: #696969;
 }
 
 .services-img {
@@ -146,6 +157,7 @@ header {
   font-size: 2em;
   text-align: center;
   overflow-wrap: break-word;
+  color: #696969;
 }
 
 .services-img .img {
@@ -155,7 +167,7 @@ object-fit: cover;
 
 .outdoors {
   background-image: url(Skyline-driftwood-EDGE.jpg);
-  background-position: center;
+  background-position: 78% 100%;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -165,12 +177,13 @@ object-fit: cover;
   justify-content: center;
   align-items: center;
   font-size: 2rem;
-  color: white;
+  color: #d1d1d1;
+  
 }
 
 .service-form {
   max-width: 800px;
-  margin: 0 auto;
+  margin: 0 auto 10rem;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -181,7 +194,7 @@ object-fit: cover;
 
 .quote-form {
   max-width: 800px;
-  margin: 0 auto;
+  margin: 10rem auto;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -222,22 +235,26 @@ button[type="submit"]:hover {
 .quote {
   background-image: url(SkylineIII-Stainless-Cannonballs.jpg);
   min-height: 70vh;
-  background-position: center;
+  background-position: 80% 30%;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   font-size: 2rem;
-  color: #cbced4;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
 
+.quote p {
+  color: #d1d1d1;
+}
+
 .browse {
   font-size: 3rem;
   color: #5f6061;
   margin-left: 16%;
+  margin-bottom: 2rem;
 }
 
 .enclave {
@@ -303,3 +320,37 @@ button[type="submit"]:hover {
     font-size: 2rem;
     text-align: center;
   }
+
+footer {
+  display: flex;
+  align-items: center;
+  min-height: 20vh;
+  background-color: #29292a;
+  padding: 1.6rem;
+  color: #d1d1d1;
+}
+
+  .footer-left {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    
+  }
+
+  .footer-links {
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+  }
+
+  .footer-links a {
+    color: #d1d1d1;
+  }
+
+.footer-links a:hover {
+  color: #c16e70;
+}
+
+.marquis, .kingsman  a {
+
+}
