@@ -19,6 +19,10 @@ dd {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 ul[role='list'],
 ol[role='list'] {
@@ -77,6 +81,27 @@ select {
   font-family: 'Fira Sans', sans-serif;
 }
 
+.top-nav {
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  gap: 3rem;
+  background-color: #29292a;
+  margin: 0;
+  height: 6rem;
+  list-style-type: none;
+  
+}
+
+.top-nav a {
+  color: #d1d1d1;
+}
+
+.top-nav a:hover {
+  color: #c16e70;
+  font-size: 1.13rem;
+}
+
 .services {
   text-align: center;
   font-size: 3rem;
@@ -86,6 +111,7 @@ header {
   background-image: url(hero_bg.png);
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: cover;
   height: 100vh;
   display: flex;
@@ -106,6 +132,12 @@ header {
   font-weight: 300;
 }
 
+.special {
+  font-size: 1.75rem;
+  color: white;
+  text-align: center;
+}
+
 .services-img {
   display: flex;
   justify-content: center;
@@ -122,11 +154,12 @@ object-fit: cover;
 }
 
 .outdoors {
-  background-image: url(OutdoorsScaled.jpg);
+  background-image: url(Skyline-driftwood-EDGE.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 50vh;
+  background-attachment: fixed;
+  height: 70vh;
   margin: 12vh 0 12vh 0;
   display: flex;
   justify-content: center;
@@ -141,7 +174,18 @@ object-fit: cover;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  background-color: #f8f8f8;
+  background-color: hsl(217, 0%, 55%, 0.3 );
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.quote-form {
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: hsl(217, 0%, 55%, 0.3 );
   padding: 30px;
   border-radius: 5px;
 }
@@ -175,3 +219,87 @@ button[type="submit"]:hover {
   background-color: #0d8bf2;
 }
 
+.quote {
+  background-image: url(SkylineIII-Stainless-Cannonballs.jpg);
+  min-height: 70vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-size: 2rem;
+  color: #cbced4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.browse {
+  font-size: 3rem;
+  color: #5f6061;
+  margin-left: 16%;
+}
+
+.enclave {
+  background-image: url(Enclave72-iStock-1133765996-Mar2020-scaled.jpg);
+  min-height: 50vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  color: #dedede;
+  text-align: center;
+}
+
+/* .products-img {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 2em;
+  text-align: center;
+  overflow-wrap: break-word;
+}
+
+.products-img .img {
+  max-width: 50rem;
+  object-fit: cover;
+  } */
+
+
+
+  .products-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .products-img img {
+    object-fit: cover;
+    max-width: 50rem;
+  }
+
+.marquis {
+  font-size: 2rem;
+  text-align: center;
+}
+
+  .products-img-two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .products-img-two img {
+  max-width: 50rem;
+  }
+
+  .kingsman {
+    font-size: 2rem;
+    text-align: center;
+  }
