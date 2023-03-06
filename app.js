@@ -1,39 +1,16 @@
-const apiKey = 'YOUR_API_KEY';
-const provinceDropdown = document.getElementById('province');
-const cityDropdown = document.getElementById('city');
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
 
-// Get a list of Canadian provinces from Google Places API
-fetch(`https://maps.googleapis.com/maps/api/place/autocomplete/json?input=province+canada&types=(regions)&key=${apiKey}`)
-  .then(response => response.json())
-  .then(data => {
-    const provinces = data.predictions.map(prediction => prediction.structured_formatting.main_text);
 
-    provinces.forEach(province => {
-      const option = document.createElement('option');
-      option.value = province;
-      option.textContent = province;
-      provinceDropdown.appendChild(option);
-    });
-  })
-  .catch(error => console.error(error));
-
-// Populate the city dropdown when a province is selected
-provinceDropdown.addEventListener('change', event => {
-  const province = event.target.value;
-  cityDropdown.innerHTML = '';
-
-  // Get a list of cities in the selected province from Google Places API
-  fetch(`https://maps.googleapis.com/maps/api/place/autocomplete/json?input=${province}+canada&types=(cities)&key=${apiKey}`)
-    .then(response => response.json())
-    .then(data => {
-      const cities = data.predictions.map(prediction => prediction.structured_formatting.main_text);
-
-      cities.forEach(city => {
-        const option = document.createElement('option');
-        option.value = city;
-        option.textContent = city;
-        cityDropdown.appendChild(option);
-      });
-    })
-    .catch(error => console.error(error));
-});
+    function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+    https://maps.googleapis.com/maps/api/place/details/json?place_id=<PLACE_ID>&fields=name,rating,reviews&key=<API_KEY>&min_rating=5

@@ -4,17 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="app.js"></script>
     <link rel="icon" type="image/png" href="colorLogoWhiteOutline.png" />
     <link rel="stylesheet" href="style.css">
     <title>777Fire</title>
 </head>
 <body>    
-    <ul class="top-nav">
-        <li><a href="#">Home</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#products">Products</a></li>
-        <li><a href="careers.html">Careers</a></li>
-    </ul>
+    <div class="topnav" id="myTopnav">
+        <a href="#">Home</a>
+        <a href="#services">Services</a>
+        <a href="#products">Products</a>
+        <a href="careers.html">Careers</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+    
     <header>
         <div class="hero">
             <img src="colorLogoWhiteOutline.png" alt="" width="200">
@@ -151,6 +155,7 @@
 </p>
 
     </main>
+    <button class="top" onclick="topFunction()">Top</button>
 
 <footer>
     <div class="footer-left">
